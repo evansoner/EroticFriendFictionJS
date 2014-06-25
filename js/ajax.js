@@ -5,6 +5,8 @@ function wordCheck( str, callback ){
 	    callback(ajax.responseText);
 	}
     }
-    ajax.open("GET","wordCheck.php?str="+str,true);
+    ajax.open("POST","wordCheck.php",true);
+    ajax.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+    ajax.send("str="+str);
     ajax.send();
 }

@@ -3,7 +3,7 @@
 $stopWords = file('stopwords.txt', FILE_IGNORE_NEW_LINES); //array of words
 $verbs = file('verbs.txt', FILE_IGNORE_NEW_LINES); //array of verbs
 
-$str = $_GET["str"];
+$str = $_POST["str"];
 $response = "";
 $sentences = explode(",", $str);
 foreach( $sentences as &$sentence ){

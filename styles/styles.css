@@ -25,6 +25,12 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
     outline: 0;
 }
 
+div
+{
+    color: #444;
+    font-weight: 800;
+}
+
 #main{
     margin-left:auto;
     margin-right:auto;
@@ -36,4 +42,33 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
 
 textarea {
    resize: none;
+}
+
+.next, .prev{
+  color: #fff;
+  position: absolute;
+  background: #000;
+  background: rgba(0,0,0, .6);
+  top: 50%;
+  z-index: 1;
+  font-size: 2em;
+  margin-top: -.75em;
+  opacity: .3;
+  user-select: none;
+}
+.next:hover, .prev:hover{
+  cursor: pointer;
+  opacity: 1;
+}
+.next{
+  left: 80%;
+  padding: 10px 5px 15px 10px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.prev{
+  left: 20%;
+  padding: 10px 10px 15px 5px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
