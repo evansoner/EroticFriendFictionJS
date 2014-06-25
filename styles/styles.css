@@ -1,0 +1,39 @@
+html
+{
+    background: #fff
+    height: 100%;
+}
+
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
+    color: #fff;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    color: #444;
+    font-weight: 800;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
+{
+    color: inherit;
+    text-decoration: none;
+    outline: 0;
+}
+
+#main{
+    margin-left:auto;
+    margin-right:auto;
+
+    text-align:center;
+    width:750px;
+    height:800px;
+}
+
+textarea {
+   resize: none;
+}
